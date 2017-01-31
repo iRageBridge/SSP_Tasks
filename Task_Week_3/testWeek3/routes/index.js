@@ -12,7 +12,7 @@ router.post('/', function(req,res){
 });
 
 router.get('/hello', function(req,res,next){
-  res.render('hello', {title: req.body.form});
+  res.render('hello', {title: req.body.input});
 });
 
 
