@@ -6,8 +6,13 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Input Table' });
 });
 
+router.post('/', function(req,res){
+  res.redirect('/hello');
+  //res.send('Post page');
+});
+
 router.get('/hello', function(req,res,next){
-  res.render('hello', {title: 'Hello'});
+  res.render('hello', {title: req.body.form});
 });
 
 
