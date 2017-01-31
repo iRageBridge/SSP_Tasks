@@ -3,3 +3,16 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  
+  form(name="input" method="post")
+    div.input
+      span.label Enter Your Name:
+      br 
+      br
+      input(type="text", name="name")
+      br
+      br
+    div.actions
+      input(type="submit", value="Enter")
+
+
